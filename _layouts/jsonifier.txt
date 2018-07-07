@@ -1,0 +1,4 @@
+{% capture filepath %}/assets/{{ page.title }}{% endcapture %}[
+  {% for image in site.static_files %}{% if image.path contains filepath %}"{{ site.domain }}{{ image.path | replace: site.data.strings.quote, site.data.strings.escapedQuote }}"{% unless forloop.last %},
+  {% endunless %}{% endif %}{% endfor %}
+]

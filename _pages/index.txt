@@ -1,8 +1,9 @@
 ---
 permalink: index.json
+index: true
 ---
 
-[
-  {% for page in site.pages %}{% if page.url contains '.json' %}"{{ site.domain }}{{ page.url }}"{% unless forloop.last %},
-  {% endunless %}{% endif %}{% endfor %}
+[{% assign pages = site.pages | where: "index", true %}
+  {% for page in pages %}"{{ site.domain }}{{ page.url }}"{% unless forloop.last %},
+  {% endunless %}{% endfor %}
 ]

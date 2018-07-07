@@ -1,6 +1,6 @@
-domain: "https://api.discordbots.co.uk"
+domain: "https://random.discordbots.co.uk"
 baseurl: ""
-url: "https://api.discordbots.co.uk"
+url: "https://random.discordbots.co.uk"
 encoding: utf-8
 
 include:

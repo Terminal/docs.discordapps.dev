@@ -9,12 +9,12 @@ include:
 collections:
   documentation:
     output: true
-    permalink: /posts/docs/:path/
+    permalink: /posts/:path/
 
 defaults:
   -
     scope:
       path: ''
-      type: 'documentation'
+      type: documentation
     values:
       layout: default

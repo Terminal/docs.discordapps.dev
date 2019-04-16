@@ -6,10 +6,11 @@ index: true
 [{% assign pages = site.documentation | sort: 'date' | reverse %}
   {% for page in pages %}{
     "content": "{{page.content | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}",
-    "title": "{{page.title}}",
-    "by": "{{page.by}}",
-    "permalink": "{{page.url}}",
-    "date": "{{page.date}}"
+    "title": "{{page.title | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}",
+    "by": "{{page.by | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}",
+    "permalink": "{{page.url | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}",
+    "date": "{{page.date}}",
+    "description": "{{page.description | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}"
   }{% unless forloop.last %},
   {% endunless %}{% endfor %}
 ]

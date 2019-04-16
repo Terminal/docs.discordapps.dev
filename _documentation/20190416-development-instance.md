@@ -1,6 +1,7 @@
 ---
 date: 2019-04-16
 title: How to set up a development instance of Discord Apps Marketplace
+description: Learn how to set up a development instance of Discord Apps Marketplace for testing, developing and improving the free and open source bot list website.
 by: 7coil
 ---
 

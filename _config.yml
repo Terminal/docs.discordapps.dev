@@ -1,7 +1,20 @@
-domain: "https://random.discordbots.co.uk"
+domain: "https://docs.discordapps.dev"
 baseurl: ""
-url: "https://random.discordbots.co.uk"
+url: "https://docs.discordapps.dev"
 encoding: utf-8
 
 include:
   - '_pages'
+
+collections:
+  documentation:
+    output: true
+    permalink: /docs/:path/
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'documentation'
+    values:
+      layout: default

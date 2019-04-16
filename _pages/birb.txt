@@ -1,6 +1,0 @@
----
-title: birb
-permalink: birb.json
-layout: jsonifier
-index: true
----

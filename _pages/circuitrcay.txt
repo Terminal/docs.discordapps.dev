@@ -1,6 +1,0 @@
----
-title: circuitrcay
-permalink: circuitrcay.json
-layout: jsonifier
-index: true
----

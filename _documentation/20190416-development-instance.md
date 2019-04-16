@@ -32,3 +32,13 @@ Afterwards, just start the development server.
 ```bash
 yarn dev
 ```
+
+## Development Tools
+You can install the following extensions to help debug the website.
+
+- Google Chrome, and Chromium compatibles (Microsoft Edge)
+  - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+  - [Redux DevTools](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
+- Mozilla Firefox, and compatibles
+  - [React Developer Tools](https://addons.mozilla.org/en-GB/firefox/addon/react-devtools/)
+  - [Redux DevTools](https://addons.mozilla.org/en-GB/firefox/addon/reduxdevtools/)

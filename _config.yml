@@ -18,3 +18,7 @@ defaults:
       type: documentation
     values:
       layout: default
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"

@@ -7,11 +7,11 @@ by: 7coil
 
 All _too common_, a person will try to invite a bot,
 and they can't see the server they are trying to invite.  
-![Hello im trying to invite a bot and it says select server and my server isnt showing](/assets/img/howto/20190417-add-to-discord-bots-gg/help.png)
+![Hello im trying to invite a bot and it says select server and my server isnt showing](/assets/img/howto/20190417-fix-missing-server/help.png)
 
 If you see the following screen, and the server you want to invite a bot to isn't available,
 you can try to debug why this is not occurring, by following some simple steps.  
-![The "Invite Bots" screen, with no possible server selection](/assets/img/howto/20190417-add-to-discord-bots-gg/noserver.png)
+![The "Invite Bots" screen, with no possible server selection](/assets/img/howto/20190417-fix-missing-server/noserver.png)
 
 ## Insight 1 - You are logged in to the wrong account
 You may be logged into Discord on the incorrect Discord account in your web browser.
@@ -21,15 +21,15 @@ or has someone else logging into Discord using the web browser.
 ### How to fix
 1. Go to https://discordapp.com/
 2. Click `Open` button, located in the top right hand corner of the screen  
-   ![Open Button](/assets/img/howto/20190417-add-to-discord-bots-gg/open.png)
+   ![Open Button](/assets/img/howto/20190417-fix-missing-server/open.png)
 3. After waiting for Discord to load in your **web browser**,
    click on the **cog** on the bottom left hand corner of the screen.  
-   ![Open Cog](/assets/img/howto/20190417-add-to-discord-bots-gg/cog.png)
+   ![Open Cog](/assets/img/howto/20190417-fix-missing-server/cog.png)
 4. On the bottom left hand corner of the screen, click the `Log Out` button to log off.  
-   ![Log Out](/assets/img/howto/20190417-add-to-discord-bots-gg/logout.png)
+   ![Log Out](/assets/img/howto/20190417-fix-missing-server/logout.png)
 5. Click `Log Out` again to confirm your selection.  
 6. Click `Login`, located in the top right hand corner of the screen  
-   ![Login Button](/assets/img/howto/20190417-add-to-discord-bots-gg/login.png)
+   ![Login Button](/assets/img/howto/20190417-fix-missing-server/login.png)
 7. Refresh the "Connect to Discord" page.
 
 If your servers are back, you can now invite your bot normally.
@@ -40,7 +40,7 @@ Try alternative accounts that may be able to invite the bot.
 Just because someone gave you the "Moderator" role in a server,
 doesn't mean you have permission to invite any bots.
 
-![Roles](/assets/img/howto/20190417-add-to-discord-bots-gg/permission.png)
+![Roles](/assets/img/howto/20190417-fix-missing-server/permission.png)
 
 ### How to fix
 To be able to invite bots, your server administrator must give you the `Manage Server` permission.
@@ -51,15 +51,15 @@ If you are the administrator:
 1. Find the name of the role that your administrators have.
    In this example, administrators in the `Terminal.ink` server have the `ohlookitsveld` role.
 2. Click on the drop down arrow on the top left corner of the Discord window  
-   ![Dropdown](/assets/img/howto/20190417-add-to-discord-bots-gg/servername.png)
+   ![Dropdown](/assets/img/howto/20190417-fix-missing-server/servername.png)
 3. Click on Server Settings  
-   ![Cursor is selecting the "Options" link](/assets/img/howto/20190417-add-to-discord-bots-gg/settings.png)
+   ![Cursor is selecting the "Options" link](/assets/img/howto/20190417-fix-missing-server/settings.png)
 4. Click on the Roles tab  
-   ![Cursor is selecting the "Roles" tab](/assets/img/howto/20190417-add-to-discord-bots-gg/roles.png)
+   ![Cursor is selecting the "Roles" tab](/assets/img/howto/20190417-fix-missing-server/roles.png)
 5. Find the correct role, and toggle the `Manage Server` permission
-   ![Toggling `Manage Server` for the `ohlookitsveld` role](/assets/img/howto/20190417-add-to-discord-bots-gg/togglerole.gif)
+   ![Toggling `Manage Server` for the `ohlookitsveld` role](/assets/img/howto/20190417-fix-missing-server/togglerole.gif)
 6. Save changes when you are finished
-   ![Save](/assets/img/howto/20190417-add-to-discord-bots-gg/save.gif)
+   ![Save](/assets/img/howto/20190417-fix-missing-server/save.gif)
 
 ## Conclusion
 After following all steps, you should be able to invite a bot to your server.

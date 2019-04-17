@@ -25,7 +25,7 @@ or has someone else logging into Discord using the web browser.
 3. After waiting for Discord to load in your **web browser**,
    click on the **cog** on the bottom left hand corner of the screen.  
    ![Open Cog](/assets/img/howto/20190417-add-to-discord-bots-gg/cog.png)
-4. On the bottom left hand corner of the screen, click the `Log Out` button to log off.
+4. On the bottom left hand corner of the screen, click the `Log Out` button to log off.  
    ![Log Out](/assets/img/howto/20190417-add-to-discord-bots-gg/logout.png)
 5. Click `Log Out` again to confirm your selection.  
 6. Click `Login`, located in the top right hand corner of the screen  

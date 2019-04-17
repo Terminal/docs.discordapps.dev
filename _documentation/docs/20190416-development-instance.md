@@ -23,7 +23,7 @@ npm i -g yarn
 Clone the repository to your workspace, and install the required dependencies
 
 ```bash
-git clone https://github.com/terminal/discordapps.dev
+git clone https://github.com/terminal/discordapps.dev --recurse-submodules
 yarn
 ```
 

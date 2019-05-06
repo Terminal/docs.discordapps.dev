@@ -3,6 +3,7 @@ date: 2019-04-17
 title: How to fix "Bot requires code grant." message for your Discord Bot
 description: Learn how to fix the "Bot requires code grant." error message for your Discord Bot, step by step
 by: 7coil
+type: howto
 ---
 
 When you're testing your Discord Bot, and you try to invite your bot,

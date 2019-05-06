@@ -2,6 +2,8 @@
 date: 2019-04-17
 title: How to create a Discord webhook to send GitHub repository updates to your Discord channel
 description: Learn how to create a Discord webhook to send GitHub repository updates to keep up to date with what your development team is doing on GitHub.
+by: 7coil
+type: howto
 ---
 
 ## How to install

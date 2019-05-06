@@ -3,6 +3,7 @@ date: 2019-04-17
 title: How to fix missing servers while inviting a Discord bot.
 description: Learn how to invite a bot to your Discord server, if the server you wish to invite a bot to is not available in the list of servers.
 by: 7coil
+type: howto
 ---
 
 All _too common_, a person will try to invite a bot,

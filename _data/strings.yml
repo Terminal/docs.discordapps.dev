@@ -2,3 +2,4 @@ quote: '"'
 escapedQuote: '\"'
 newline: "\n"
 discord: https://discord.gg/8uC6aKZ
+escapedNewline: "x-ls-newline"

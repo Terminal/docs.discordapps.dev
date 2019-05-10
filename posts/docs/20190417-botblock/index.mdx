@@ -1,0 +1,62 @@
+---
+date: 2019-04-17
+title: How to use the BotBlock proprietary software to post bot counts to discordapps.dev
+description: Learn how to use the BotBlock proprietary API to send your bot's server counts to discordapps.dev, as well as other third party bot list service providers
+by: 7coil
+---
+
+As your bot application grows, you want to expose your bot to as many bot list and application
+websites as you can.
+
+However, finding the correct endpoint for other bot lists are a hassle.  
+BotBlock aims to solve this by providing a single POST endpoint to update your counts to all bot
+lists all at once.
+
+## Setup
+You will need your `Discord Apps Marketplace Token`, found by clicking the `Configure` button under your bot page.
+
+![Configure](configure.png)
+
+## Discord.js and Eris
+You will need to install `node-fetch` to POST your count to the proprietary API
+
+```bash
+npm install --save node-fetch
+```
+or 
+```bash
+yarn add node-fetch
+```
+
+```js
+const fetch = require('node-fetch');
+
+const updateGuildCounts = () => {
+  console.log('Posting bot counts');
+  fetch('https://botblock.org/api/count', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      'server_count': client.guilds.length,
+      'bot_id': client.user.id,
+      'discordapps.dev': '// THE TOKEN FROM THE CONFIGURE PAGE //',
+    })
+  })
+    .then(res => res.json())
+    .then(({success, failure}) => {
+      console.log('Success: ' + Object.keys(success).join(', '));
+      console.log('Failure: ' + Object.keys(failure).join(', '));
+    });
+};
+
+client.once('ready', () => {
+  updateGuildCounts();
+  setInterval(updateGuildCounts, 1.8e6); // Every 30 minutes
+});
+```
+
+## Other Languages
+The community has made free and open source libraries to help you post counts to the proprietary
+service. [You can find them, and other bot lists at the BotBlock.org documentation](https://botblock.org/api/docs)

@@ -1,8 +1,0 @@
-{
-  "content": "{{content | replace: '	', site.data.strings.escapedTab | replace: '\r\n', site.data.strings.escapedNewline | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}",
-  "title": "{{page.title | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}",
-  "by": "{{page.by | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}",
-  "permalink": "{{page.url | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote | replace: '/index', '' }}",
-  "date": "{{page.date | date_to_xmlschema }}",
-  "description": "{{page.description | replace: site.data.strings.newline, '\n' | replace: site.data.strings.quote, site.data.strings.escapedQuote }}"
-}

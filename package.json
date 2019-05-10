@@ -1,0 +1,11 @@
+{
+  "name": "random.discordbots.co.uk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Terminal/docs.discordapps.dev.git",
+  "author": "7coil <katie@discordmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "front-matter": "^3.0.2"
+  }
+}

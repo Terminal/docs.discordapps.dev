@@ -9,7 +9,7 @@ include:
 collections:
   documentation:
     output: true
-    permalink: /posts/:path/
+    permalink: /posts/:path
 
 defaults:
   -

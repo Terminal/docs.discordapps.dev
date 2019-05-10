@@ -3,6 +3,23 @@ permalink: index.html
 date: 2000-01-01
 ---
 
+<style>
+  table, th, td {
+    border: solid 1px;
+    border-spacing: 0;
+  }
+
+  td, th {
+    border-top:0;
+    border-right:0;
+  }
+
+  table {
+    border-bottom:0;
+    border-left:0;
+  }
+</style>
+
 <h1>ls.terminal.ink documentation service</h1>
 <ul>
   <li><code>/index.json</code> - View 10 latest posts</li>
@@ -10,3 +27,55 @@ date: 2000-01-01
 </ul>
 
 <a href="https://discordapps.dev/">View on Discord Apps Marketplace for markup</a>
+
+<h2>Available Pages</h2>
+{% assign pages = site.documentation | sort: 'date' | reverse %}
+<table>
+  <thead>
+    <tr>
+      <td>
+        Title
+      </td>
+      <td>
+        By
+      </td>
+      <td>
+        Description
+      </td>
+      <td>
+        Date
+      </td>
+      <td>
+        Type
+      </td>
+      <td>
+        Folder
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for page in pages %}
+      <tr>
+        <td>
+          {{page.title}}<br />
+          <a href="https://discordapps.dev{{page.url}}">View Formatted</a>
+        </td>
+        <td>
+          {{page.by}}
+        </td>
+        <td>
+          {{page.description}}
+        </td>
+        <td>
+          {{page.date}}
+        </td>
+        <td>
+          {{page.type}}
+        </td>
+        <td>
+          {{page.url | replace: '/index', '/'}}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
